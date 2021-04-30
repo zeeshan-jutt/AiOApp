@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280sp"
+    android:layout_height="150dp"
+    android:layout_margin="60sp"
+    android:layout_gravity="center"
+    android:background="@drawable/shap_dialog"
+    android:gravity="center"
+    tools:context=".CallActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fstTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Mobile No"
+        />
+    <EditText
+        android:id="@+id/mblTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:inputType="phone"
+        android:hint="phone Number"
+        android:ems="10">
+    </EditText>
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="50sp"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content"
+       android:background="@drawable/call"
+        />
+</LinearLayout>

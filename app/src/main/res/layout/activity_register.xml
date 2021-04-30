@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <View
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:background="@drawable/header">
+    </View>
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:src="@drawable/bg6_blue"
+        android:layout_marginTop="-50sp"
+        android:layout_marginLeft="105sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/profile1"/>
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="20sp"
+            android:text="Upload Image"
+            android:textColor="#FF076CF5"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13sp"
+            android:inputType="text"
+            android:background="@drawable/corner"
+            android:hint="Enter Your Name"
+            android:ems="14"
+            />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:inputType="textWebEmailAddress"
+            android:background="@drawable/corner"
+            android:hint="Enter Your Email"
+            android:ems="14"
+            />
+
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/corner"
+            android:inputType="textPhonetic"
+            android:hint="Enter phone number"
+            android:ems="14"
+            />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/corner"
+            android:inputType="textPostalAddress"
+            android:hint="Enter Your address (Area) "
+            android:ems="14"
+            />
+
+        <EditText
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/corner"
+            android:inputType="text"
+            android:hint="What is your service (eg:Electrician)"
+            android:ems="14"
+            />
+        <EditText
+            android:id="@+id/passsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner"
+            android:layout_marginTop="8dp"
+            android:ems="14"
+            android:hint="Enter Password"
+            android:inputType="textWebPassword" />
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner"
+            android:layout_marginTop="8dp"
+            android:ems="14"
+            android:hint="Confirm Password"
+            android:inputType="textWebPassword" />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/repassword"/>
+
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Existing user! Go to Sign in page"
+            android:layout_below="@+id/btnsignup"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5sp"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/footer_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/footer">
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="-40sp"
+            android:textSize="15sp"
+            android:text=" Powered by: All In One Solutions"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

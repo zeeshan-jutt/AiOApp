@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="UserDialog">
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowMinWidthMajor">100dp</item>
+            <item name="android:windowActionBar">false</item>
+<!--            <item name="android:windowBackground">@drawable/empty</item>-->
+        </style>
+
+</resources>

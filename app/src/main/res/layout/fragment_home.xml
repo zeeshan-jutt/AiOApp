@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".ui.home.HomeFragment">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="15sp"
+    android:id="@+id/card1"
+    app:cardCornerRadius="10sp"
+    >
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:id="@+id/viewPager"
+        />
+</androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/welcome_home"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_marginTop="3sp"
+        android:layout_below="@+id/card1"
+        android:gravity="center"
+        android:text="You are doing a greate Job"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_home"
+        android:gravity="center"
+        android:background="@drawable/bg3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Your Service Catagory"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner1"
+            android:layout_width="300dp"
+            android:padding="5sp"
+            android:layout_height="50sp"/>
+        <ImageView
+            android:id="@+id/confirm"
+            android:layout_width="80dp"
+            android:layout_height="60sp"
+            android:gravity="center"
+            android:layout_marginTop="50sp"
+            android:src="@drawable/done"
+
+    />
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/addservice"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@drawable/corner"-->
+<!--            android:hint="Confirm Your Service"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/confirm"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="50sp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="50sp"-->
+<!--            android:text="Confirm"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@drawable/red_button"-->
+<!--            android:textSize="20sp" />-->
+    </LinearLayout>
+</RelativeLayout>

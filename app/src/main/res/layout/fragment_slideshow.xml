@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50sp"
+        />
+
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile1"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Image"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginBottom="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/corner"
+        android:gravity="start"
+
+        android:text="User Name"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/corner"
+        android:gravity="start"
+        android:text="User Email"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/profile_phn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/corner"
+        android:gravity="start"
+        android:text="User Phone num"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/profile_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/corner"
+        android:gravity="start"
+        android:text="User Address"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/profile_serv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/corner"
+        android:gravity="start"
+        android:text="User Service"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_save"
+        android:layout_width="150dp"
+        android:layout_height="50sp"
+        android:background="@drawable/red_button"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="50sp"
+        android:text="Save Settings"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>
